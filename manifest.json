@@ -1,0 +1,18 @@
+{
+   "background": {
+      "scripts": [
+         "scripts/background.js"
+       ]
+   },
+   "content_scripts": [ {
+      "js": ["scripts/content.js"],
+      "matches": [
+         "https://www.google.com/*"
+       ]
+   } ],
+   "description": "Redirect Test",
+   "manifest_version": 2,
+   "name": "Redirect Test",
+   "permissions": [ "tabs", "https://*/*", "http://*/*", "webRequest", "webRequestBlocking" ],
+   "version": "1.0"
+}
